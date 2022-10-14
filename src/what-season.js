@@ -18,13 +18,15 @@ function getSeason(date) {
   // console.log(month);
   // console.log(typeof month);
   let season =
-    month >= 0 && month <= 2
+    month >= 0 && month <= 1
       ? 'winter'
-      : month >= 3 && month <= 5
+      : month == 11
+      ? 'winter'
+      : month >= 2 && month <= 4
       ? 'spring'
-      : month >= 6 && month <= 8
+      : month >= 5 && month <= 7
       ? 'summer'
-      : month >= 9 && month <= 11
+      : month >= 8 && month <= 10
       ? 'autumn'
       : 'Unable to determine the time of year!';
   // console.log(season);
